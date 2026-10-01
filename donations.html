@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donations - Our Community Church</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Our Community Church</h1>
+        <nav>
+			<a href="index.html">Home</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="events.html">Events</a> | 
+            <a href="sermons.html">Sermons</a> | 
+            <a href="prayer.html">Prayer Requests</a> |
+            <a href="donations.html">Donations</a> |
+            <a href="calendar.html">Calendar</a> |
+            <a href="ministers.html">Ministers</a>
+        </nav>
+    </header>
+
+    <main style="padding: 20px;">
+        <h2>Support Our Mission</h2>
+        <p>Your contributions help us sustain our community programs and support those in need.</p>
+        <p>We appreciate your generosity. You can support our work through the following methods:</p
+        <div class="donation-options">
+            <h3>How to Donate</h3>
+			<button class="donate-btn">20,000 UGX</button>
+			<button class="donate-btn">50,000 UGX</button>
+			<button class="donate-btn">100,000 UGX</button>
+			<button class="donate-btn">1,000,000 UGX</button>
+		</div>
+		
+		<div class="payment-details">
+		    <h3>Payment Methods</h3>
+            <ul>
+                <li><strong>MTN Mobile Money:</strong> <b><u><i>[ +256 768981622 (Agnes Ssali)]</u></i></b></li>
+                <li><strong>Airtel Money:</strong><b><u><i >[ +256 702 433 073 (Katumba Enock)]</u></i></b></li>
+                <li><strong>In-Person:</strong> You may drop your contributions during our Sunday services.</li>
+				<p>For bank transfers or other inquiries, please email:
+				     <a href="mailto:agnesssali2@gmail.com">agnesssali2@gmail.com</a>
+				</p>
+            </ul>
+        </div>
+		
+		<div class="custom-donation">
+		    <label for="donation-amount"><strong>Enter Donation Amount (UGX) </strong></label>
+			<br>
+			<input type="number" id="donation-amount" placeholder="e.g 50000" min="1000" step="1000" style="padding: 10px; width:100%; max-width: 200px; margin: 10px 0; border: 1px solid #ccc;  border-radius: 5px;">
+			</br>
+			<button class="donate-btn" onclick="processDonation()">Proceed to Donate</button>
+		</div>
+    </main>
+	
+	<script>
+	   function processDonation() {
+	       var amount = document.getElementById('donation-amount').value;
+		   if (amount >=1000) {
+		    alert("Thank you for your generous gift of "+ amount + "UGX! Please use our mobile Money number:0785 668 632 to complete the transaction.");
+			} else {
+			alert(Please enter an amount of at least 1,000 ugx.");
+              }
+            }
+	</script>		
+
+</body>
+</html>
+   

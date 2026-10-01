@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prayer Requests - Our Community Church</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Our Community Church</h1>
+        <nav>
+			<a href="index.html">Home</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="events.html">Events</a> | 
+            <a href="sermons.html">Sermons</a> | 
+            <a href="prayer.html">Prayer Requests</a> |
+            <a href="donations.html">Donations</a> |
+            <a href="calendar.html">Calendar</a> |
+            <a href="ministers.html">Ministers</a>
+        </nav>
+    </header>
+
+    <main style="padding: 20px;">
+        <h2>Prayer Requests</h2>
+        <p>We believe in the power of prayer. If you have a request, please let us know so our community can lift you up.</p>
+        
+        <div class="prayer-box">
+            <h3>How to submit a request:</h3>
+			<div class="card">
+        <h2>Submit a Prayer Request</h2>
+        <p>We are here to stand with you in prayer. Please share your request below.</p>
+        
+        <form action="/submit-prayer" method="POST">
+            <div class="form-group">
+                <label>Your Name (Optional)</label>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+			
+			<div class="form-group">
+			     <label for="location">Your Location (e.g., zone,kampala)</label>
+				 <input type="text" id="location" name="location" placeholder="e.g. kansanga sebuluba zone" required>
+			</div>
+			
+			<div class="forn-group">
+			     <label>Are you a member of our church?</label>
+			     <div class="radio-group" style="display:flex; gap: 20px; margin-top: 10px;">
+			          <label style="font-weight: normal;">
+					      <input type="radio" name="membership" value="member" required> Yes, I am a member
+					  </label>
+					  <label style="font-weight: normal;">
+					      <input type="radio" name="membership" value="non-member" required> No, I am a visitor
+					  </label>
+				</div>
+					  
+			</div>
+
+            <div class="form-group">
+                <label>Your Prayer Request</label>
+                <textarea name="request" rows="5" placeholder="How can we pray for you?" required></textarea>
+            </div>
+			
+
+            <div class="form-group-checkbox">
+                <input type="checkbox" name="private" id="private">
+                <label for="private">Keep this request private (for leadership only)</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Prayer Request</button>
+        </form>
+    </div>
+</div>
+
+            <p>You can send your requests to our church email at: <strong><a href="mailto:agnesssali2@gmail.com">agnesssali2@gmail.com</a></strong></p>
+            <p>Alternatively, visit us during our Sunday service to fill out a prayer card.</p>
+        </div>
+
+        <h3 style="margin-top: 30px;">Current Prayer Focus</h3>
+        <ul>
+            <li>Praying for our students as they prepare for upcoming exams.</li>
+            <li>Praying for peace and health within our community families.</li>
+        </ul>
+    </main>
+
+</body>
+</html>
+
